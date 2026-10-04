@@ -1,0 +1,461 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>سعد بن معاذ | هكذا عبّر فؤادي</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #101c17;
+  color: #eee8d9;
+  font-family: 'Cairo', sans-serif;
+  line-height: 2.2;
+}
+
+:root {
+  --gold: #d6b46a;
+  --green: #263e31;
+  --dark: #101c17;
+  --light: #eee8d9;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  background:
+    radial-gradient(ellipse at center, #344b39, #101c17 75%);
+  border-bottom: 1px solid #9c8149;
+}
+
+.ornament {
+  color: var(--gold);
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-family: 'Amiri', serif;
+  font-size: clamp(50px, 10vw, 90px);
+  color: var(--gold);
+  line-height: 1.5;
+}
+
+.hero p {
+  font-family: 'Amiri', serif;
+  font-size: 25px;
+  margin: 20px 0 35px;
+}
+
+.btn {
+  text-decoration: none;
+  color: var(--dark);
+  background: var(--gold);
+  padding: 12px 35px;
+  border-radius: 40px;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.btn:hover {
+  background: #f0d28e;
+  transform: translateY(-4px);
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(16,28,23,.96);
+  border-bottom: 1px solid #78643b;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--gold);
+  text-decoration: none;
+  font-size: 13px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+section {
+  padding: 90px 22px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  max-width: 850px;
+  width: 100%;
+  padding: 40px;
+  border: 1px solid #65583b;
+  border-radius: 18px;
+  background: linear-gradient(145deg,#1c3025,#15221b);
+  box-shadow: 0 15px 40px rgba(0,0,0,.3);
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 1s;
+}
+
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.icon {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-family: 'Amiri', serif;
+  color: var(--gold);
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 22px;
+}
+
+h3 {
+  color: var(--gold);
+  margin: 25px 0 10px;
+}
+
+p {
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+.highlight {
+  color: var(--gold);
+  font-weight: bold;
+}
+
+.quote {
+  border-right: 3px solid var(--gold);
+  padding: 15px 20px;
+  margin: 25px 0;
+  background: #26382d;
+  font-family: 'Amiri', serif;
+  font-size: 22px;
+}
+
+.qualities {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(130px,1fr));
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.quality {
+  text-align: center;
+  padding: 15px 8px;
+  background: #293e30;
+  border: 1px solid #78643b;
+  border-radius: 12px;
+  color: var(--gold);
+}
+
+.final {
+  background: radial-gradient(ellipse,#263e31,#101c17 75%);
+  text-align: center;
+  min-height: 100vh;
+}
+
+.final h2 {
+  font-size: clamp(38px,8vw,65px);
+}
+
+.final .card {
+  border-color: var(--gold);
+}
+
+.name {
+  margin-top: 35px;
+  color: var(--gold);
+  font-weight: bold;
+  font-size: 19px;
+}
+
+footer {
+  padding: 25px;
+  text-align: center;
+  color: var(--gold);
+  border-top: 1px solid #65583b;
+  font-size: 13px;
+}
+
+@media(max-width:600px) {
+  .card { padding: 25px 18px; }
+  h2 { font-size: 31px; }
+  p { font-size: 16px; }
+  nav { gap: 10px; }
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+  <div class="ornament">✦ ❈ ✦</div>
+  <h1>سعد بن معاذ</h1>
+  <p>
+    رجلٌ عظيمٌ في قومه،<br>
+    عظيمٌ في إيمانه ومواقفه.
+  </p>
+  <a href="#start" class="btn">ابدئي الرحلة ↓</a>
+  <div style="margin-top:45px;color:#d6b46a">
+    مسار جذور | الدفعة الرابعة
+  </div>
+</header>
+
+<nav>
+  <a href="#start">البداية</a>
+  <a href="#islam">إسلامه</a>
+  <a href="#badr">بدر</a>
+  <a href="#khandaq">الخندق</a>
+  <a href="#qualities">صفاته</a>
+  <a href="#heart">فؤادي</a>
+</nav>
+
+<section id="start">
+<div class="card">
+<div class="icon">🌿</div>
+<h2>من هو سعد بن معاذ؟</h2>
+
+<p>
+هو <span class="highlight">سعد بن معاذ بن النعمان الأنصاري الأوسي</span> رضي الله عنه، من كبار الصحابة وسادة الأنصار في المدينة المنورة.
+</p>
+
+<p>
+كان سيدًا في قومه، ذا مكانة واحترام، وكان معروفًا بقوة الشخصية وحسن القيادة. وقد عاش في المدينة قبل الهجرة النبوية، ثم أصبح من أعظم أنصار الإسلام.
+</p>
+
+<p>
+لم تكن عظمته في مكانته بين قومه فحسب، بل ظهرت عظمته الحقيقية في إيمانه ومواقفه وتضحيته في سبيل الله.
+</p>
+
+<div class="quote">
+بعض الرجال تُعرف مكانتهم بما يملكون، أما سعد فعُرفت مكانته بما قدّموا من إيمان ومواقف.
+</div>
+</div>
+</section>
+
+<section id="islam">
+<div class="card">
+<div class="icon">✨</div>
+<h2>رحلة إسلامه</h2>
+
+<p>
+عندما أرسل رسول الله ﷺ مصعب بن عمير رضي الله عنه إلى المدينة ليعلّم الناس الإسلام، كان سعد بن معاذ من الشخصيات التي كان لإسلامها أثر عظيم في المجتمع.
+</p>
+
+<p>
+ذهب سعد إلى مصعب بعد أن عرف ما يدعو إليه، واستمع إليه، فشرح الله صدره للإسلام وأسلم.
+</p>
+
+<p>
+ولم يحتفظ سعد بإيمانه لنفسه، بل عاد إلى قومه، ودعاهم إلى الإسلام، وجعل إسلامه سببًا في إسلام كثير من قومه.
+</p>
+
+<p>
+وهنا يظهر لنا جانب مهم من شخصيته: لم تكن مكانته الاجتماعية عائقًا أمام اتباع الحق، بل استخدم مكانته في نشر الخير.
+</p>
+
+<div class="quote">
+تعلّمت من إسلامه أن الإنسان العظيم ليس من يتمسك بمكانته، بل من يتبع الحق مهما كان.
+</div>
+</div>
+</section>
+
+<section id="badr">
+<div class="card">
+<div class="icon">⚔️</div>
+<h2>موقفه يوم بدر</h2>
+
+<p>
+عندما خرج المسلمون إلى بدر، استشار رسول الله ﷺ أصحابه في مواجهة قريش، وكان يريد أن يعرف موقف الأنصار خاصة، لأنهم بايعوه على نصرته في المدينة.
+</p>
+
+<p>
+فقام سعد بن معاذ رضي الله عنه، وتحدث مؤكدًا وقوف الأنصار مع رسول الله ﷺ واستعدادهم لنصرته.
+</p>
+
+<p>
+كان موقفه دليلًا على صدق العهد وقوة الإيمان، فلم يكن مجرد كلام يقال، بل كان استعدادًا حقيقيًا لتحمل المسؤولية والوقوف مع الحق.
+</p>
+
+<h3>ما الذي يميز هذا الموقف؟</h3>
+<p>
+أن سعدًا لم ينتظر أن يطلب منه أحد إثبات إيمانه، بل بادر وأظهر موقفه في وقت كان المسلمون فيه بحاجة إلى الثبات والتشجيع.
+</p>
+
+<div class="quote">
+ليس الثبات أن نقول إننا أقوياء، بل أن نظهر صدقنا عندما تأتي المواقف.
+</div>
+</div>
+</section>
+
+<section id="khandaq">
+<div class="card">
+<div class="icon">🛡️</div>
+<h2>موقفه في غزوة الخندق</h2>
+
+<p>
+في غزوة الخندق، شارك سعد رضي الله عنه في الدفاع عن المدينة مع المسلمين، وأثناء الغزوة أصابه سهم في أكحله، وهو عرق في الذراع.
+</p>
+
+<p>
+وكانت إصابته شديدة، فدعا الله أن يبقيه حتى يرى ما يكون في أمر بني قريظة، لما كان بينهم وبين المسلمين من نقض للعهد أثناء الغزوة.
+</p>
+
+<p>
+وبعد انتهاء الخندق، حاصر المسلمون بني قريظة، ثم نزلوا على حكم سعد بن معاذ رضي الله عنه، فحكم فيهم بحكم وافق حكم الله.
+</p>
+
+<p>
+ويظهر في هذا الموقف تحمله للمسؤولية، وحرصه على العدل، حتى في المواقف الصعبة.
+</p>
+
+<div class="quote">
+ومن أعظم دروس هذا الموقف أن المسؤولية تحتاج إلى شجاعة وحكمة، لا إلى التسرع.
+</div>
+</div>
+</section>
+
+<section id="qualities">
+<div class="card">
+<div class="icon">🌟</div>
+<h2>صفات سعد بن معاذ</h2>
+
+<p>
+من خلال مواقفه نستطيع أن نتعرف على صفات عظيمة اجتمعت في شخصيته:
+</p>
+
+<div class="qualities">
+<div class="quality">🤍 قوة الإيمان</div>
+<div class="quality">⚔️ الشجاعة</div>
+<div class="quality">🌿 الثبات</div>
+<div class="quality">⚖️ العدل</div>
+<div class="quality">🤝 الوفاء</div>
+<div class="quality">⭐ القيادة</div>
+<div class="quality">🌱 تحمل المسؤولية</div>
+<div class="quality">✨ نصرة الحق</div>
+</div>
+
+<h3>كيف ظهرت هذه الصفات؟</h3>
+<p>
+ظهرت شجاعته في مواقفه مع رسول الله ﷺ، وظهر ثباته في بدر، وظهر وفاؤه في نصرته للإسلام، كما ظهرت مسؤوليته في موقفه من بني قريظة.
+</p>
+</div>
+</section>
+
+<section>
+<div class="card">
+<div class="icon">🌙</div>
+<h2>وفاته ومكانته</h2>
+
+<p>
+اشتد جرح سعد بن معاذ رضي الله عنه بعد غزوة الخندق، وتوفي متأثرًا بإصابته في السنة الخامسة للهجرة.
+</p>
+
+<p>
+وكانت وفاته مصابًا عظيمًا للمسلمين، وقد ورد في الحديث الصحيح أن النبي ﷺ قال:
+</p>
+
+<div class="quote">
+«اهتز عرش الرحمن لموت سعد بن معاذ».
+</div>
+
+<p>
+وهو حديث عظيم يبيّن فضل سعد ومكانته، ويجعل سيرته من السير التي يتأمل فيها المسلم في معنى الإيمان والعمل الصالح.
+</p>
+</div>
+</section>
+
+<section id="heart" class="final">
+<div class="card">
+<div class="icon">🤍</div>
+
+<h2>هكذا عَبَّرَ فُؤَادِي</h2>
+
+<p>
+حين قرأت سيرة سعد بن معاذ رضي الله عنه، لم أتوقف عند الأحداث وحدها، بل توقفت عند الإنسان الذي كان وراء تلك المواقف.
+</p>
+
+<p>
+أكثر ما أثّر فيَّ هو ثباته يوم بدر، حين وقف مؤيدًا لرسول الله ﷺ، وأظهر صدق إيمانه واستعداده لنصرة الحق.
+</p>
+
+<p>
+تساءلت في نفسي: هل أستطيع أن أكون ثابتة عندما يكون الطريق صعبًا؟ وهل أستخدم ما أملكه من علم وقدرات في الخير؟
+</p>
+
+<p>
+علّمتني قصته أن الإيمان ليس كلمات جميلة نرددها، بل مواقف صادقة تظهر في أفعالنا، وأن المكانة الحقيقية ليست فيما نملكه، بل فيما نقدمه من خير.
+</p>
+
+<div class="quote">
+أريد أن أتعلم من سعد أن أكون شجاعة في الحق، صادقة في مواقفي، نافعة لمن حولي، وأن أجعل لكل معرفة أتعلمها أثرًا في حياتي.
+</div>
+
+<p>
+لم تكن هذه السيرة مجرد قصة عن صحابي عظيم، بل كانت مرآةً جعلتني أراجع نفسي، وأفكر في المواقف التي أحتاج فيها إلى الثبات.
+</p>
+
+<div class="name">
+إعداد الطالبة: أميرة عبدالفتاح<br>
+مسار جذور – الدفعة الرابعة
+</div>
+
+<div style="margin-top:30px;color:#d6b46a;font-size:25px">
+✦ هكذا عَبَّرَ فُؤَادِي ✦
+</div>
+</div>
+</section>
+
+<footer>
+سعد بن معاذ رضي الله عنه | رحلة في الإيمان والمواقف 🌿
+</footer>
+
+<script>
+const cards = document.querySelectorAll(".card");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+}, {threshold: 0.12});
+
+cards.forEach(card => observer.observe(card));
+</script>
+
+</body>
+</html>
